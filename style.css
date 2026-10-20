@@ -1,0 +1,193 @@
+/* 1. वैश्विक सेटिंग्स (Global Settings) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* यह लाइन बटन दबाते ही पेज को बहुत ही स्मूथ नीचे ले जाएगी */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* 2. नेविगेशन बार (Header / Navbar) */
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+/* लिंक पर माउस ले जाने पर रंग बदलेगा */
+.nav-links a:hover {
+    color: #4f46e5;
+}
+
+/* 3. हीरो सेक्शन (Hero Section) */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    background: linear-gradient(135deg, #e0e7ff 0%, #ffffff 100%);
+    min-height: 80vh;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    color: #1e1b4b;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #475569;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* मुख्य बटन (Clickable & Interactive Button) */
+.cta-btn {
+    display: inline-block;
+    background-color: #4f46e5;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(79, 70, 229, 0.3);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+/* माउस ले जाने (Hover) पर बटन थोड़ा बड़ा होगा */
+.cta-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(79, 70, 229, 0.5);
+}
+
+/* क्लिक करते समय (Active State) बटन थोड़ा अंदर दबेगा */
+.cta-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(79, 70, 229, 0.2);
+}
+
+.hero-image {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 🛠️ नया CSS कोडिंग बॉक्स ग्राफिक */
+.laptop-box {
+    width: 250px;
+    height: 180px;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 15px 35px rgba(79, 70, 229, 0.3);
+    transition: transform 0.5s ease; /* घुमाने के लिए स्मूथ ट्रांजिशन */
+}
+
+/* 🔥 जादुई इफ़ेक्ट: जब माउस इस बॉक्स पर जाएगा, तो यह 3D स्टाइल में हल्का सा घूमेगा */
+.laptop-box:hover {
+    transform: rotate(5deg) scale(1.05);
+}
+
+.screen-text {
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+/* 4. स्किल्स / फीचर्स सेक्शन (Features Section) */
+.features {
+    padding: 100px 10% 60px 10%;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #1e1b4b;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* कार्ड इंटरैक्शन */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}

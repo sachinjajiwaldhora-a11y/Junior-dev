@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <!-- बाहरी CSS फाइल को यहाँ लिंक किया गया है -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. नेविगेशन बार -->
+    <header>
+        <a href="#" class="logo">💻 DevJunior</a>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#skills-section">Skills</a></li>
+        </ul>
+    </header>
+
+    <!-- 2. हीरो सेक्शन -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to My Coding Space!</h1>
+            <p>Hi, I am learning web development. I love building beautiful pages and writing clean code with HTML and CSS.</p>
+            <!-- क्लिक करने पर नीचे स्किल्स सेक्शन पर जाने के लिए ID (#skills-section) लिंक की है -->
+            <a href="#skills-section" class="cta-btn">Check Out My Work</a>
+        </div>
+        <div class="hero-image">
+            <!-- 🛠️ पुरानी इमेज हटाकर यहाँ एक सुंदर कोडिंग शेप बॉक्स बनाया है -->
+            <div class="laptop-box">
+                <div class="screen-text">&lt;/&gt;</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. फीचर्स / स्किल्स सेक्शन -->
+    <section id="skills-section" class="features">
+        <h2>What I Learn 🚀</h2>
+        <div class="card-container">
+            
+            <!-- कार्ड 1 -->
+            <div class="card">
+                <div class="card-icon">🏗️</div>
+                <h3>HTML5</h3>
+                <p>Creating the structure and bones of web pages using awesome tags.</p>
+            </div>
+
+            <!-- कार्ड 2 -->
+            <div class="card">
+                <div class="card-icon">🎨</div>
+                <h3>CSS3</h3>
+                <p>Adding colors, margins, fonts, and making pages layout beautifully.</p>
+            </div>
+
+            <!-- कार्ड 3 -->
+            <div class="card">
+                <div class="card-icon">✨</div>
+                <h3>Interactions</h3>
+                <p>Using hover effects and transitions to make components feel alive.</p>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
